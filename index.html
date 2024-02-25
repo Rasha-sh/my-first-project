@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--bootsrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+     rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+     crossorigin="anonymous">
+     <!-- Font Awesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Font Awesome Cdn -->
+    <link href="css/style.css" rel="stylesheet">
+    <title>AUTOCAR</title>
+</head>
+<body>
+   <!--side  links -->
+  <aside class="contact-us">
+    <ul class="list-unstyled ">
+      <li><a href="#"><i class="fa-solid fa-square-phone-flip first" title="CONTACT US"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-facebook-f" title="facebook"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-twitter" title="twitter"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-linkedin-in" title="linkedin"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-instagram" title="instagram"></i></a></li>
+    </ul>
+  </aside>
+    <!-- A grey horizontal navbar that becomes vertical on small screens -->
+ <nav class="navbar navbar-expand-sm fexed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="image/A1.png" alt="Avatar Logo" style="width:60px;" class="rounded-pill"> 
+        </a>
+      </div>
+    <div class="container-fluid">
+      <!-- Links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Service</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">New</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">More</a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <li><button class="dropdown-item" type="button">Refund Policy</button></li>
+            <li><button class="dropdown-item" type="button">Reviews</button></li>
+            <li><button class="dropdown-item" type="button">Free Demo</button></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search">
+        <button class="btn btn-primary" type="button">Search</button>
+        <button class="btn btn-primary mx-1 glow" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Login
+        </button>
+      </form>
+       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header  bg-info">
+              <h1 class="modal-title fs-5 text-light" id="exampleModalLabel">Login</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!-- Button to Open the Modal -->
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label text-info">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label text-info">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3  form-switch ">
+                      <input type="checkbox" class="form-check-input bg-info" id="exampleCheck1" role="switch" checked>
+                      <label class="form-check-label ms-2 text-info" for="exampleCheck1">Check me out</label>
+                    </div>
+                  </form>
+            </div>
+            <div class="modal-footer d-flex  justify-content-between">
+                <button type="submit" class="btn btn-info text-light">Login</button>
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+   <!-- Carousel -->
+   <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="image/h.jpeg" class="d-block w-100" alt="...">
+        <div class="carousel-caption text-center d-none d-md-block ">
+          <h3>Find your dream car</h3>
+          <h2>chose<span>Mercides</span></h2>
+          <p>We can help you find the best car. Check our reviews, compare models and find cars for sale.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="image/h1.jpeg" class="d-block w-100" alt="...">
+        <div class="carousel-caption text-center d-none d-md-block">
+          <h3>Find your dream car</h3>
+          <h2>chose<span>BMW</span></h2>
+          <p>We can help you find the best car. Check our reviews, compare models and find cars for sale.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="image/h3.jpeg" class=" text-center d-block w-100" alt="...">
+        <div class="carousel-caption text-center d-md-block">
+          <h3>Find your dream car</h3>
+          <h2>chose<span>AUDI</span></h2>
+          <p>We can help you find the best car. Check our reviews, compare models and find cars for sale.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- Left and right controls/icons -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="main-txt  text-center">
+        <h1>About <span class="text-primary">Us</span></h1>
+      </div>
+      <div class="row" style="margin-top: 50px;">
+
+        <div class="col-md-6 py-3 py-md-0">
+          <div class="card">
+            <img src="image/W8.jpeg" alt="car">
+          </div>
+        </div>
+        <div class="col-md-6 py-3 py-md-0">
+          <h2>WELCOME TO THE WEB CAR SITE</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident perferendis dolorem, numquam earum at nam beatae voluptate natus consectetur facere, saepe cupiditate ut exercitationem deserunt, facilis quam perspiciatis autem iure illo harum minima. Quas, vitae aperiam laudantium alias asperiores nulla rerum, nihil eveniet perferendis sint illum accusamus officiis aliquam nam.</p>
+          <button id="about-btn">Read More...</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About End -->
+   <!-- start Popular Makes -->
+   <div class="main-txt  text-center">
+    <h1>Popular<span class="text-primary">Makes</span></h1>
+  </div>
+  <br>
+  <br>
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Here's a brief overview of some common features found in &nbsp;<strong text-primery>BMW</strong>&nbsp;cars:
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          BMW cars offer a harmonious blend of performance, luxury, innovation, and safety, making them 
+          a top choice for enthusiasts and discerning drivers alike.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Here's a brief overview of some common features found in &nbsp;<strong text-primery>AUDI</strong>&nbsp;cars:
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Audi cars offer a harmonious blend of luxury, performance, innovation, and safety,
+          making them a top choice for discerning drivers seeking both elegance and excitement on the road.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Here's a brief overview of some common features found in &nbsp;<strong text-primery>MERCIDES</strong>&nbsp;cars:
+        </button>
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Mercedes-Benz cars offer a harmonious blend of luxury, performance, innovation, and safety,
+          setting them apart as symbols of automotive excellence.
+        </div>
+      </div>
+    </div>
+  </div>
+    <!--end Popular Makes-->
+    <!--start translate-->
+     <div class="container1-lg-sm">
+     <div class="main-txt  text-center">
+    <h1>T<span class="text-primary">ranslate</span></h1>
+    </div>
+  <br>
+  <br>
+  <div class="modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Modal body text goes here.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <input class="card-body" type="text"  translate to arabic>
+      
+  </div>
+  
+  </div>
+     <div class="container-lg-sm img-fluid">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./image/q1-r.png" class="d-block w-50 img-fluid" alt="BMW">
+          </div>
+          <div class="carousel-item">
+            <img src="./image/Q3-re.png" class="d-block w-50 img-fluid" alt="AUDI">
+          </div>
+          <div class="carousel-item">
+            <img src="./image/Q2-r.png" class="d-block w-50 img-fluid" alt="Mercides">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+  </div>
+   <!-- service -->
+   <section class="service" id="service">
+    <div class="fixed-img img-fluid"></div>
+      <div class="container-xl my-4 ">
+        <div class="row justify-content-between gap-5 mx-2 ">
+          <div class="main-txt  text-center">
+            <h1>Featured<span class="text-primary"> Listings</span></h1>
+            </div>
+            <!--card1-->
+            <div class="card" style="width:20rem;">
+              <img src="./image/W4.jpeg" class="card-img-top img-fluid" alt="BMW">
+              <div class="card-body">
+                <h5 class="card-title">Range Rover L460</h5>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">$80,000</li>
+              </ul>
+              <div class="card-body">
+                <button type="submit" class="btn btn-primary text-light">BUY</button>
+                <a class="card-link m-4 ">500,000 miles</a>
+              </div>
+            </div>
+            <!--card2-->
+            <div class="card" style="width:20rem;">
+              <img src="./image/W3.jpeg" class="card-img-top img-fluid" alt="BMW">
+              <div class="card-body">
+                <h5 class="card-title">BMW iX2</h5>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">$30,000</li>
+              </ul>
+              <div class="card-body">
+                <button type="submit" class="btn btn-primary text-light">BUY</button>
+                <a class="card-link m-4 ">300,000 miles</a>
+              </div>
+            </div>
+            <!--card3-->
+            <div class="card" style="width:20rem;">
+              <img src="./image/b1.jpeg" class="card-img-top img-fluid" alt="AUDI">
+              <div class="card-body">
+                <h5 class="card-title">Audi A8 4-door sedan </h5>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">$50,000</li>
+              </ul>
+              <div class="card-body">
+                <button type="submit" class="btn btn-primary text-light">BUY</button>
+                <a class="card-link m-4 ">800,000 miles</a>
+              </div>
+            </div>
+          <!-- end card1 -->   
+          </div>             
+        </div>
+    </div>
+  </section>
+  <!-- end of service -->
+  <!-- team section -->
+  <section class="team mt-3" id="team">
+    <div class="main-txt  text-center">
+      <h1>Our <span class="text-primary">team</span></h1>
+    </div>
+    <div class="container-lg mt-5">     
+      <div class="row members">
+        <!-- card-1 -->
+        <div class="col-md-6 col-lg-4 mb-2">
+          <div class="card text-light thx-card shadow-lg card-img-1">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="upper-content text-start ">
+              <h3>All thanks and appreciation</h3>
+              <span><i class="far fa-clock"></i> march 25, 2024</span>
+              </div>
+              <div class="lower-content">
+                <div class="img-box">
+                  <img src="./image/i1.jpeg" alt="---" class="mr-2 rounded-circle">
+                </div>
+                <div class="description">
+                  <h5 class="text-primary fw-bold ms-2">George Brown</h5>
+                  <span class="ms-2">full-stack developer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card -2 -->
+        <div class="col-md-6 col-lg-4 mb-2">
+          <div class="card text-light thx-card shadow-lg  card-img-2">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="upper-content text-start ">
+              <h3>All thanks and appreciation</h3>
+              <small><i class="far fa-clock"></i> May 5, 2024</small>
+              </div>
+              <div class="lower-content">
+                <div class="img-box">
+                  <img src="./image/i2.jpeg" alt="---" class="mr-2 rounded-circle">
+                </div>
+                <div class="description">
+                  <h5 class="text-primary fw-bold ms-2">Omar el farouk</h5>
+                  <small class="ms-2">Front-end developer</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card -3 -->
+       <div class="col-md-6 col-lg-4 mb-2">
+        <div class="card text-light thx-card shadow-lg  card-img-3">
+          <div class="card-img-overlay d-flex flex-column">
+             <div class="upper-content text-start ">
+                <h3>All thanks and appreciation</h3>
+                  <small><i class="far fa-clock"></i> May 5, 2024</small>
+                    </div>
+                    <div class="lower-content">
+                      <div class="img-box">
+                        <img src="./image/I4.jpeg" alt="---" class="mr-2 rounded-circle">
+                        </div>
+                        <div class="description">
+                          <h5 class="text-primary fw-bold ms-2">Emily Rees</h5>
+                          <small class="ms-2">back-end developer</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        </div>
+      </div>
+    </div>
+  </section>
+        <!-- news section -->
+    <section class="new mt-4 mb-5" id="news">
+      <div class="main-txt  text-center">
+        <h1>Our <span class="text-primary">team</span></h1>
+      </div>
+      <div class="container-lg mt-4 ">
+        <!-- item-1 -->
+        <article class="new-card bg-dark d-flex shadow-lg">
+          <div class="img-box incline-right">
+            <img src="./image/B7.jpeg" alt="">
+          </div>
+          <div class="description p-3">
+            <h2 class="text-primary fs-1 fw-bold " >Car New</h2>
+            <div class="small text-light">
+              <time datetime="2023-01-20 13:00:00">
+                <i class="fas fa-calendar-alt mr-2"></i> Sun, Jan 20th 2023
+              </time>
+            </div>
+            <div class="line bg-primary"></div>
+            <p class=" text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat
+              asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo
+              accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo
+              iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!
+            </p>
+            <ul class="text-light d-flex list-unstyled text-center">
+              <li class="list-item"> <i class="fas fa-tag mx-2 text-primary"></i>new car</li>
+              <li class="list-item"> <i class="fas fa-clock mx-2 text-success"></i> 20 min</li>
+              <li class="list-item"> <i class="fas fa-play mx-2 text-danger "></i> watch video </li>
+            </ul>
+           </div>
+        </article>
+          <!-- item-2 -->
+        <article class="new-card d-flex shadow-lg mt-4">
+            <div class="img-box incline-left">
+              <img src="./image/B5.jpeg" alt="">
+            </div>
+            <div class="description bg-dark p-3">
+              <h2 class="text-primary fs-1 fw-bold " >Car News</h2>
+              <div class="small text-light">
+                <time datetime="2020-05-25 00:00:00">
+                  <i class="fas fa-calendar-alt mr-2"></i> Mon, Fev 4th 2022
+                </time>
+              </div>
+              <div class="line bg-primary"></div>
+              <p class=" text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat
+                asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo
+                accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo
+                iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!
+              </p>
+              <ul class="text-light d-flex list-unstyled text-center">
+                <li class="list-item"> <i class="fas fa-tag mx-2 text-primary"></i>new car</li>
+                <li class="list-item"> <i class="fas fa-clock mx-2 text-success"></i> 30 min</li>
+                <li class="list-item"> <i class="fas fa-play mx-2 text-danger "></i> watch video </li>
+              </ul>
+             </div>
+        </article>
+      
+    </div> 
+  </div>
+    <!-- Footer Start -->
+    <footer id="footer">
+      <h1><span>AUTO</span>CAR</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+         Temporibus fugiat, ipsa quos nulla qui alias.</p>
+      <div class="social-links">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-pinterest-p"></i>
+      </div>
+      <div class="credit">
+        <p>Designed By <a href="#">AS Coding</a></p>
+      </div>
+      <div class="copyright">
+        <p>&copy;Copyright AS Coding. All Rights Reserved</p>
+      </div>
+    </footer>
+    <!-- Footer End -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
+<!--<div class="form-group"><div class="partners-carousel view view-partners view-id-partners view-display-id-block_1 js-view-dom-id-c9e4551c954ec0ca5fe1c7c68422b481559423326a304192476b74e880673bc3">
+        <div class="view-content">
+            <div class="views-row"><div class="views-field views-field-field-image"><div class="field-content"><a href="#" title="AUDI" rel="المؤسسة العمومية للتلفزيون الجزائري" target="_blank">  <img loading="lazy" src="/sites/default/files/styles/320_x_320/public/2" width="320" height="320" alt="" typeof="foaf:Image" class="img-responsive" />
+  </a></div></div><div class="views-field views-field-edit-node"><span class="field-content"></span></div></div>
+      <div class="views-row"><div class="views-field views-field-field-image"><div class="field-content"><a href="https://news.radioalgerie.dz/ar" title="الاذاعة الجزائرية" rel="الاذاعة الجزائرية" target="_blank">  <img loading="lazy" src="/sites/default/files/styles/320_x_320/public/2024-01/12.radio_.png?itok=pv-JSLnD" width="320" height="320" alt="" typeof="foaf:Image" class="img-responsive" />
+  </a></div></div><div class="views-field views-field-edit-node"><span class="field-content"></span></div></div>
+    </div>-->
